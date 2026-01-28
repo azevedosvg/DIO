@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Westeros Wiki — Página Principal</title>
+  <meta name="description" content="Mini wiki temática de Game of Thrones com navegação lateral, conteúdo principal e sumário por âncoras.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="Westeros Wiki - Logotipo" width="200">
+    </div>
+
+    <nav class="top-nav" aria-label="Navegação principal">
+      <a href="#casas">Casas</a> |
+      <a href="#personagens">Personagens</a> |
+      <a href="#locais">Locais</a> |
+      <a href="#cronologia">Cronologia</a>
+    </nav>
+  </header>
+
+  <div class="bar" aria-hidden="true"></div>
+
+  <div class="content">
+
+    <aside class="sidebar" aria-label="Menu lateral">
+      <h2>Westeros Wiki</h2>
+
+      <ul>
+        <li><a href="#casas">🏰 Grandes Casas</a></li>
+        <li><a href="#personagens">👑 Personagens</a></li>
+        <li><a href="#locais">🗺️ Locais</a></li>
+        <li><a href="#cronologia">⏳ Linha do Tempo</a></li>
+        <li><a href="#curiosidades">📌 Curiosidades</a></li>
+      </ul>
+
+      <hr>
+
+      <p>
+        <strong>Dica:</strong> use o sumário “Neste Artigo” para ir direto às seções.
+      </p>
+    </aside>
+
+    <main class="main" id="topo">
+      <article aria-label="Conteúdo principal">
+
+        <header>
+          <h1>Game of Thrones — Panorama de Westeros</h1>
+          <p>
+            <mark>Winter is coming.</mark> Esta página reúne um resumo estratégico de casas,
+            personagens e locais-chave do universo de Westeros.
+          </p>
+        </header>
+
+        <section id="casas">
+          <h2>Grandes Casas</h2>
+          <p>
+            As casas nobres concentram poder político, militar e econômico. Entre as principais:
+            <strong>Stark</strong>, <strong>Lannister</strong>, <strong>Targaryen</strong>, <strong>Baratheon</strong> e <strong>Tyrell</strong>.
+          </p>
+
+          <blockquote cite="https://www.hbo.com/game-of-thrones">
+            “When you play the game of thrones, you win or you die.”
+          </blockquote>
+
+          <ul>
+            <li><strong>Stark:</strong> tradição, honra e o Norte.</li>
+            <li><strong>Lannister:</strong> riqueza, influência e estratégia.</li>
+            <li><strong>Targaryen:</strong> legado, conquista e fogo.</li>
+          </ul>
+        </section>
+
+        <hr>
+
+        <section id="personagens">
+          <h2>Personagens-chave</h2>
+          <p>
+            Personagens centrais movimentam alianças e conflitos. Alguns pilares narrativos:
+          </p>
+
+          <ol>
+            <li><strong>Jon Snow</strong> — lealdade, liderança e dilemas.</li>
+            <li><strong>Daenerys Targaryen</strong> — ambição, libertação e poder.</li>
+            <li><strong>Tyrion Lannister</strong> — inteligência, diplomacia e sobrevivência.</li>
+          </ol>
+
+          <p>
+            Exemplo de atalho de teclado (semântico): pressione <kbd>Ctrl</kbd> + <kbd>F</kbd> para buscar na página.
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="locais">
+          <h2>Locais relevantes</h2>
+          <p>
+            O mapa de Westeros é parte do enredo. Alguns pontos estratégicos:
+          </p>
+
+          <ul>
+            <li><strong>Winterfell</strong> — centro do Norte.</li>
+            <li><strong>King’s Landing</strong> — capital e epicentro político.</li>
+            <li><strong>The Wall</strong> — fronteira e contenção do desconhecido.</li>
+          </ul>
+
+          <picture>
+            <source media="(min-width: 900px)" srcset="assets/images/westeros-desktop.jpg">
+            <source media="(min-width: 500px)" srcset="assets/images/westeros-tablet.jpg">
+            <img src="assets/images/westeros-mobile.jpg" alt="Mapa ilustrativo de Westeros" width="320">
+          </picture>
+        </section>
+
+        <hr>
+
+        <section id="cronologia">
+          <h2>Linha do Tempo</h2>
+          <p>
+            Uma visão macro dos eventos (exemplo didático):
+          </p>
+
+          <table border="1" cellpadding="10" cellspacing="0" aria-label="Linha do tempo resumida">
+            <thead>
+              <tr>
+                <th>Evento</th>
+                <th>Impacto</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Conflitos entre Casas</td>
+                <td>Reconfiguração de alianças</td>
+                <td><progress value="70" max="100">70%</progress></td>
+              </tr>
+              <tr>
+                <td>Ameaça no Norte</td>
+                <td>Pressão estratégica</td>
+                <td><progress value="55" max="100">55%</progress></td>
+              </tr>
+              <tr>
+                <td>Disputa pelo Trono</td>
+                <td>Escalada política</td>
+                <td><progress value="80" max="100">80%</progress></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <hr>
+
+        <section id="curiosidades">
+          <h2>Curiosidades</h2>
+          <p>
+            Indicador de “influência política” (exemplo com <code>&lt;meter&gt;</code>):
+          </p>
+
+          <label for="influencia">Influência na corte:</label><br>
+          <meter id="influencia" min="0" max="10" value="8">8 de 10</meter>
+
+          <p>
+            <small>Observação: valores e exemplos são apenas didáticos.</small>
+          </p>
+        </section>
+
+        <p>
+          <a href="#topo">⬆ Voltar ao topo</a>
+        </p>
+
+      </article>
+    </main>
+
+    <aside class="anchors" aria-label="Sumário do artigo">
+      <h2>Neste Artigo</h2>
+      <nav aria-label="Links âncora do conteúdo">
+        <ul>
+          <li><a href="#casas">Grandes Casas</a></li>
+          <li><a href="#personagens">Personagens-chave</a></li>
+          <li><a href="#locais">Locais relevantes</a></li>
+          <li><a href="#cronologia">Linha do Tempo</a></li>
+          <li><a href="#curiosidades">Curiosidades</a></li>
+        </ul>
+      </nav>
+
+      <hr>
+
+      <details>
+        <summary>Ver “Missão do Projeto”</summary>
+        <p>
+          Estrutura: header + sidebar + main + sumário + footer.  
+          Entregável: HTML bem organizado, semântico e com conteúdo.
+        </p>
+      </details>
+    </aside>
+
+  </div>
+
+  <footer class="footer">
+    <p>
+      &copy; 2026 — Westeros Wiki (projeto acadêmico).  
+      <br>
+      <small>Fan project / conteúdo temático para fins educacionais.</small>
+    </p>
+  </footer>
+
+</body>
+</html>
